@@ -13,7 +13,7 @@ Laravel Artisan is not available as a composer package. You can use Laravel Arti
     ]
 ```
 2. Run ```composer require gggordon/artisan```
-3. Run ```./vendor/gggordon/artisan/artisan artisan:init```. This command creates **artisan-config.php** and **artisan** in your root directory.
+3. Run ```./vendor/gggordon/artisan/artisan artisan:init```. This command creates **./config/artisan.php** and **artisan** in your root directory.
 
 
 ## Usage
