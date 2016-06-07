@@ -25,6 +25,11 @@ class Init extends Command
     {
         $runningFrom = getcwd();
         $configFilePath = Artisan::getConfigFilePath();
+        $configFolder = $configFilePath.'/config';
+
+        if (!file_exists($configFolder)) {
+            mkdir($configFolder, 0777, true);
+        }
 
         $artisan = $runningFrom.'/artisan';
 

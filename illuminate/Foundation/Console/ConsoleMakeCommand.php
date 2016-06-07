@@ -1,6 +1,6 @@
 <?php
 
-namespace Moon\Illuminate\Foundation\Console;
+namespace Moon\illuminate\Foundation\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;

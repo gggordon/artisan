@@ -1,6 +1,6 @@
 <?php
 
-namespace Moon\Illuminate\Foundation\Console;
+namespace Moon\illuminate\Foundation\Console;
 
 use Exception;
 use Illuminate\Contracts\Events\Dispatcher;
