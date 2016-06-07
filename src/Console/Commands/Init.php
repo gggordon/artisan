@@ -25,7 +25,7 @@ class Init extends Command
     {
         $runningFrom = getcwd();
         $configFilePath = Artisan::getConfigFilePath();
-        $configFolder = $configFilePath.'/config';
+        $configFolder = $runningFrom.'/config';
 
         if (!file_exists($configFolder)) {
             mkdir($configFolder, 0777, true);
@@ -37,7 +37,7 @@ class Init extends Command
             copy(__DIR__.'/../../config.php', $configFilePath);
             $this->info("Created {$configFilePath}");
         } else {
-            $this->comment("{$cwd} already exists.");
+            $this->comment("{$configFilePath} already exists.");
         }
 
         if (!file_exists($artisan)) {
