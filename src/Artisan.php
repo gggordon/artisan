@@ -7,7 +7,7 @@ class Artisan
 {
     public static function getConfigFilePath()
     {
-        return getcwd().'/artisan-config.php';
+        return getcwd().'/config/artisan.php';
     }
 
     public static function getConfig()

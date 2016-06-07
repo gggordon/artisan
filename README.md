@@ -3,8 +3,17 @@
 Laravel Artisan is not available as a composer package. You can use Laravel Artisan in your project with this package.
 
 ## Installation
-1. Run ```composer require moon/artisan```
-2. Run ```./vendor/moon/artisan/artisan artisan:init```. This command creates **artisan-config.php** and **artisan** in your root directory.
+1. Add the following repository to your composer.json
+```
+    "repositories": [
+        {
+            "url": "https://github.com/gggordon/artisan.git",
+            "type": "git"
+        }
+    ]
+```
+2. Run ```composer require gggordon/artisan```
+3. Run ```./vendor/gggordon/artisan/artisan artisan:init```. This command creates **artisan-config.php** and **artisan** in your root directory.
 
 
 ## Usage
@@ -14,4 +23,4 @@ Laravel Artisan is not available as a composer package. You can use Laravel Arti
 * Add the fully qualified class name to ***artisan-config.php***
 * Run ```php artisan list``` to confirm.
 
-For general usage, please refer to Artisan documentation at http://laravel.com/docs/5.1/artisan
+For general usage, please refer to Artisan documentation at http://laravel.com/docs/5.2/artisan
